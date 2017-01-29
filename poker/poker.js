@@ -27,15 +27,13 @@ $(function() {
 
   $(".deal").on("click",function(event) {
     event.preventDefault()
-    shuffledeck = function () {
-      return getDeck().shuffle()
-    }
+    var shuffledeck = getDeck().shuffle()
 
-  $("#c1").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck()[0] + ".png")
-  $("#c2").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck()[1] + ".png")
-  $("#c3").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck()[2] + ".png")
-  $("#c4").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck()[3] + ".png")
-  $("#c5").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck()[4] + ".png")
+  $("#c1").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck[0] + ".png")
+  $("#c2").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck[1] + ".png")
+  $("#c3").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck[2] + ".png")
+  $("#c4").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck[3] + ".png")
+  $("#c5").attr("src", "http://golearntocode.com/images/cards/" + shuffledeck[4] + ".png")
 
   })
 })
